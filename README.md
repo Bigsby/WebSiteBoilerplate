@@ -24,13 +24,13 @@ There are implementations of:
     <th>Module Loader</th>
 </tr>
 <tr>
-    <td rowspan="2">RequireJS</td><td rowspan="2"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs">AngularJS</a></td><td rowspan="2">AngularUI Router</td><td>CodeMirror</td>
+    <td rowspan="2">RequireJS</td><td rowspan="2">+</td><td rowspan="2"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs">AngularJS</a></td><td rowspan="2">+</td><td rowspan="2">AngularUI Router</td><td rowspan="2">+</td><td>CodeMirror</td>
 </tr>
 <tr>
     <td>Prism</td>
 </tr>
 <tr>
-    <td rowspan="2">SystemJS</td><td rowspan="2">AngularJS</td><td rowspan="2">AngularUI Router</td><td>CodeMirror</td>
+    <td rowspan="2">SystemJS</td><td rowspan="2">+</td><td rowspan="2">AngularJS</td><td rowspan="2">+</td><td rowspan="2">AngularUI Router</td><td rowspan="2">+</td><td>CodeMirror</td>
 </tr>
 <tr>
     <td>Prism</td>
