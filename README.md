@@ -21,7 +21,7 @@ As such, besides a:
 There are implementations of:
 <table>
 <tr>
-    <th>Module Loader</th>
+    <th>Module Loader</th><th colspan="6">Modules</th>
 </tr>
 <tr>
     <td rowspan="2">RequireJS</td><td rowspan="2">+</td><td rowspan="2"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs">AngularJS</a></td><td rowspan="2">+</td><td rowspan="2"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs%2Buirouter">AngularUI Router</a></td><td rowspan="2">+</td><td><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs%2Buirouter%2Bcodemirror">CodeMirror</a></td>
