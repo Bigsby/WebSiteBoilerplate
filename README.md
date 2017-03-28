@@ -14,3 +14,25 @@ and:
 * [CodeMirror](https://codemirror.net/) or
 * [Prism](https://github.com/angular-ui/ui-router)
 ...for code snippets highlighting.
+
+As such, besides a:
+* [Plain site](https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/plain)
+
+There are implementations of:
+<table>
+<tr>
+    <th>Module Loader</th>
+</tr>
+<tr>
+    <td rowspan="2">RequireJS<td><td rowspan="2">AngularJS</td><td rowspan="2">AngularUI Router</td><td>CodeMirror</td>
+</tr>
+<tr>
+    <td></td><td></td><td></td><td>Prism</td>
+</tr>
+<tr>
+    <td rowspan="2">SystemJS<td><td rowspan="2">AngularJS</td><td rowspan="2">AngularUI Router</td><td>CodeMirror</td>
+</tr>
+<tr>
+    <td></td><td></td><td></td><td>Prism</td>
+</tr>
+</table>
