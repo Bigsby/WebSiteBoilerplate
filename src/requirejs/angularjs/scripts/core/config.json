@@ -1,0 +1,30 @@
+{
+    "config": {
+        "paths": {
+            "angular": "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min",
+            "angular-sanitize": "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-sanitize.min",
+            "appBuilder": "app/appBuilder"
+        },
+        "shim": {
+            "angular":{
+                "exports": "angular"
+            },
+            "angular-sanitize": [
+                "angular"
+            ]
+        }
+    },
+    "requires": [
+        "angular-sanitize"
+    ],
+    "angular":{
+        "modules":[
+            "ngSanitize"
+        ],
+        "configComponents":[
+            "$httpProvider", 
+            "$sceProvider"
+        ]
+    },
+    "angularAppName": "bigsbyApp"
+}

@@ -1,0 +1,20 @@
+{
+    "config": {
+        "paths": {
+            "codemirrorRoot": "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0",
+            "codemirrorRoot/lib": "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0",
+            "codemirror": "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror"
+        }
+    },
+    "angular": {
+        "modules": []
+    },
+    "styles": [
+        "styles/appStyles",
+        "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min",
+        "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/theme/neo.min"
+    ],
+    "initialData": [
+        "codes"
+    ]
+}

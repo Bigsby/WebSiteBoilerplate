@@ -1,0 +1,71 @@
+{
+    "languages": [
+        {
+            "name": "Bash",
+            "language": "bash",
+            "hideLineNumbers": true,
+            "code": "> for a in: node filename.js"
+        },
+        {
+            "name": "Output",
+            "language": "text",
+            "hideLineNumbers": true,
+            "code": "This is the sentence.\nThis is the sentence.\nThis is another sentence."
+        },
+        {
+            "name": "JavaScript",
+            "language": "javascript",
+            "code": "console.log(\"Hello, World!\");"
+        },
+        {
+            "name": "C++",
+            "language": "cpp",
+            "code": "#include <iostream>\n\nint main()\n{\n std::cout << \"Hello, World!\";\n   return 0;\n}"
+        },
+        {
+            "name": "Python",
+            "language": "python",
+            "code": "print(\"Hello, World!\")"
+        },
+        {
+            "name": "F#",
+            "language": "fsharp",
+            "code": "printfn \"Hello, World!\""
+        },
+        {
+            "name": "Go",
+            "language": "go",
+            "code": "package main\n\nimport\"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Hello, World!\")\n}"
+        },
+        {
+            "name": "Ruby",
+            "language": "ruby",
+            "code": "puts 'Hello, Comments!'\n\n# This is a comment\n\n=begin\nThis is a \nmultiline comment\n=end"
+        },
+        {
+            "name": "C#",
+            "language": "csharp",
+            "code": "class Program\n{\n\tpublic static void Main()\n\t{\n\t\tSystem.Console.Write(\"Hello, World!\");\n\t}\n}"
+        },
+        {
+            "name": "Java",
+            "language": "java",
+            "code": "public class hello {\n\n\tpublic static void main(String[] args)\t{\n\t\tSystem.out.println(\"Hello, World!\");\n\t}\n\n}"
+        },
+        {
+            "name": "Perl",
+            "language": "perl",
+            "code": "print \"Hello, World!\";"
+        },
+        {
+            "name": "Powershell",
+            "language": "powershell",
+            "code": "Write-Host \"Hello, World!\""
+        },
+        {
+            "name": "PHP",
+            "language": "php",
+            "code": "<?php echo \"Hello, World!\"; ?>"
+        }
+    ]
+}
