@@ -1,0 +1,41 @@
+{
+    "config": {
+        "paths": {
+            "hljs": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min",
+            "hljs-fsharp": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/fsharp.min",
+            "hljs-go": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min",
+            "hljs-powershell": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/powershell.min",
+            "hljs-vbnet": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/vbnet.min"
+        },
+        "shim": {
+            "hljs-fsharp": [
+                "hljs"
+            ],
+            "hljs-go": [
+                "hljs"
+            ],
+            "hljs-powershell": [
+                "hljs"
+            ],
+            "hljs-vbnet": [
+                "hljs"
+            ],
+            "appBuilder": [
+                "hljs-go",
+                "hljs-fsharp",
+                "hljs-powershell",
+                "hljs-vbnet"
+            ]
+        }
+    },
+    "angular": {
+        "modules": []
+    },
+    "styles": [
+        "styles/appStyles",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/magula.min"
+    ],
+    "initialData": [
+        "codes"
+    ]
+}
