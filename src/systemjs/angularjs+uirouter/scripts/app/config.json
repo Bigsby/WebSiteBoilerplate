@@ -1,7 +1,17 @@
 {
     "config": {
+        "meta":{
+             "appBuilder": {
+                "deps": [
+                    "angular-sanitize",
+                    "angular-ui-router",
+                    "ga"
+                ]
+            }
+        }
     },
     "styles":[
         "styles/appStyles.css"
-    ]
+    ],
+    "ga": "GA-ID"
 }

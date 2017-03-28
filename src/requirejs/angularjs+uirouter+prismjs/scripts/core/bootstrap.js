@@ -42,7 +42,11 @@ requirejs(["json!coreConfig", "json!appConfig"], function (coreConfig, appConfig
 			define("data", function () { return data; });
         }
 
-        requirejs(["appBuilder"], function (appBuilder) {
+        var appRequires = ["appBuilder"];
+        if (appConfig.ga)
+            appRequires.push("ga");
+
+        requirejs(appRequires, function (appBuilder) {
 
             if (appBuilder.ProcessData && typeof appBuilder.ProcessData === "function")
                 appBuilder.ProcessData(data);

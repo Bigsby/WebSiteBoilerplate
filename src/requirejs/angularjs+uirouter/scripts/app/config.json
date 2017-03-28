@@ -6,5 +6,6 @@
     "styles": [
         "styles/appStyles"
     ],
-    "initialData": []
+    "initialData": [],
+    "ga": "GA-id"
 }

@@ -17,6 +17,8 @@ Multiple "templates" to use as base for SPA (Single Page Application) websites u
 
 ...for code snippets highlighting.
 
+Also allows for a single configuration for [Google Analytics](https://analytics.google.com/) on the websites with AngularUI Router.
+
 
 As such, besides a:
 * [Plain site](https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/plain)

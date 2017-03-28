@@ -25,8 +25,8 @@
 
             if (appConfig.initialData)
                 appConfig.initialData.forEach(function (file) {
-                    SystemJS.import("data/" + file + ".json!json").then(function(dataContent){
-                        data[file] = dataContent;    
+                    SystemJS.import("data/" + file + ".json!json").then(function (dataContent) {
+                        data[file] = dataContent;
                     });
                 });
 
@@ -37,6 +37,14 @@
             SystemJS.import("appBuilder").then(function (appBuilder) {
                 const app = angular.module(coreConfig.angularAppName, coreConfig.angular.modules);
                 app.value("data", data);
+
+                if (appConfig.ga)
+                    app.run(function ($window, $transitions, $location) {
+                        $window.ga("create", appConfig.ga, "auto");
+                        $transitions.onSuccess({}, () => {
+                            $window.ga("send", "pageview", $location.path());
+                        });
+                    });
 
                 window.templatePath = function (name) {
                     return "templates/" + name + ".html";

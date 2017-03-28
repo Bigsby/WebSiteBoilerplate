@@ -35,6 +35,14 @@
             SystemJS.import("appBuilder").then(function (appBuilder) {
                 const app = angular.module(coreConfig.angularAppName, coreConfig.angular.modules);
 
+                if (appConfig.ga)
+                    app.run(function ($window, $transitions, $location) {
+                        $window.ga("create", appConfig.ga, "auto");
+                        $transitions.onSuccess({}, () => {
+                            $window.ga("send", "pageview", $location.path());
+                        });
+                    });
+
                 window.templatePath = function (name) {
                     return "templates/" + name + ".html";
                 };
@@ -53,7 +61,6 @@
                     if ($urlRouterProvider)
                         $urlRouterProvider.otherwise("/");
                 }]));
-
 
                 angular.bootstrap(document, [coreConfig.angularAppName]);
             });

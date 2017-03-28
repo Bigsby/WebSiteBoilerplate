@@ -39,26 +39,27 @@ requirejs(["json!coreConfig", "json!appConfig"], function (coreConfig, appConfig
             for (var dataIndex = 0; dataIndex < appConfig.initialData.length; dataIndex++) {
                 data[appConfig.initialData[dataIndex]] = arguments[dataIndex];
             }
-			define("data", function () { return data; });
+            define("data", function () { return data; });
         }
 
-        requirejs(["appBuilder"], function (appBuilder) {
+        var appRequires = ["appBuilder"];
+        if (appConfig.ga)
+            appRequires.push("ga");
+
+        requirejs(appRequires, function (appBuilder) {
 
             if (appBuilder.ProcessData && typeof appBuilder.ProcessData === "function")
                 appBuilder.ProcessData(data);
-
 
             var app = angular.module(coreConfig.angularAppName, coreConfig.angular.modules.concat(appConfig.angular.modules));
             app.value("data", data);
 
             if (appConfig.ga)
                 app.run(function ($window, $transitions, $location) {
-                    if ($window.ga) {
-                        $window.ga("create", appConfig.ga, "auto");
-                        $transitions.onSuccess({}, () => {
-                            $window.ga("send", "pageview", $location.path());
-                        });
-                    }
+                    $window.ga("create", appConfig.ga, "auto");
+                    $transitions.onSuccess({}, () => {
+                        $window.ga("send", "pageview", $location.path());
+                    });
                 });
 
             window.templatePath = function (name) {
