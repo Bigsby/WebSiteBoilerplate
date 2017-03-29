@@ -1,0 +1,30 @@
+{
+    "config": {
+        "paths": {
+            "angular-ui-router": "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min",
+            "codemirrorRoot": "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0",
+            "codemirrorRoot/lib": "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0",
+            "codemirror": "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror"
+        }
+    },
+    "requires": [
+        "angular-ui-router"
+    ],
+    "angular": {
+        "modules": [
+            "ui.router"
+        ],
+        "configComponents": [
+            "$stateProvider",
+            "$urlRouterProvider"
+        ]
+    },
+    "styles": [
+        "styles/appStyles",
+        "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min",
+        "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/theme/neo.min"
+    ],
+    "initialData": [
+        "codes"
+    ]
+}

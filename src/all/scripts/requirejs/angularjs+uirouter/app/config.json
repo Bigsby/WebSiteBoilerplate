@@ -1,0 +1,24 @@
+{
+    "config": {
+        "paths": {
+            "angular-ui-router": "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min"
+        }
+    },
+    "requires": [
+        "angular-ui-router"
+    ],
+    "angular": {
+        "modules": [
+            "ui.router"
+        ],
+        "configComponents": [
+            "$stateProvider",
+            "$urlRouterProvider"
+        ]
+    },
+    "styles": [
+        "styles/appStyles"
+    ],
+    "initialData": [],
+    "ga": "GA-id"
+}

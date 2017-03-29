@@ -1,0 +1,10 @@
+{
+    "config": {},
+    "angular": {
+        "modules": []
+    },
+    "styles": [
+        "styles/appStyles"
+    ],
+    "initialData": []
+}

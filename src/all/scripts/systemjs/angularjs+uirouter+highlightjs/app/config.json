@@ -1,0 +1,31 @@
+{
+    "config": {
+        "map": {
+            "hljs": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0"
+        },
+        "packages": {
+            "hljs": {
+                "main": "highlight.min.js"
+            }
+        },
+        "meta": {
+            "appBuilder": {
+                "deps": [
+                    "angular-sanitize",
+                    "angular-ui-router",
+                    "hljs/languages/go.min",
+                    "hljs/languages/fsharp.min",
+                    "hljs/languages/powershell.min",
+                    "hljs/languages/vbnet.min"
+                ]
+            }
+        }
+    },
+    "styles": [
+        "styles/appStyles.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/magula.min.css"
+    ],
+    "initialData": [
+        "codes"
+    ]
+}
