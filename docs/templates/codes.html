@@ -1,0 +1,5 @@
+<h1>Languages' Snippets</h1>
+<div ng-repeat="snippet in $ctrl.languages">
+    <h3>{{snippet.name}}</h3>
+    <code-highlight codemirror="{{snippet.codemirror}}" hljs="{{snippet.hljs}}" prism="{{snippet.prism}}" linenumbers="{{!snippet.hideLineNumbers}}" code="{{snippet.code}}"></code-highlight>
+</div>

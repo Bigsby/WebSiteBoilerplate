@@ -1,0 +1,51 @@
+{
+    "config": {
+        "paths": {
+            "angular-ui-router": "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min",
+            "hljs": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min",
+            "hljs-fsharp": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/fsharp.min",
+            "hljs-go": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/languages/go.min",
+            "hljs-powershell": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/powershell.min",
+            "hljs-vbnet": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/vbnet.min"
+        },
+        "shim": {
+            "hljs-fsharp": [
+                "hljs"
+            ],
+            "hljs-go": [
+                "hljs"
+            ],
+            "hljs-powershell": [
+                "hljs"
+            ],
+            "hljs-vbnet": [
+                "hljs"
+            ],
+            "appBuilder": [
+                "hljs-go",
+                "hljs-fsharp",
+                "hljs-powershell",
+                "hljs-vbnet"
+            ]
+        }
+    },
+    "requires": [
+        "angular-ui-router"
+    ],
+    "angular": {
+        "modules": [
+            "ui.router"
+        ],
+        "configComponents": [
+            "$stateProvider",
+            "$urlRouterProvider"
+        ]
+    },
+    "styles": [
+        "styles/appStyles",
+        "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/magula.min"
+    ],
+    "initialData": [
+        "codes"
+    ]
+}

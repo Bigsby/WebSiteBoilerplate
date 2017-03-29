@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Modules &amp; Angular &amp; Code Higlight- Bigsby</title>
+    <link rel="stylesheet" href="styles/coreStyles.css" />
+    <style>
+        .loaders>li {
+            list-style: none;
+            float: left;
+        }
+        
+        .loaders ul {
+            list-style: none;
+        }
+        
+        .fileSystem ul {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header ui-sref="home">
+        <h1>Modules &amp; Angular &amp; Code Higlight</h1>
+    </header>
+    <section class="content">
+        <section class="innerContent">
+            <h1>Story</h1>
+            <p>
+                One of these days, I started creating a <a href="http://langs.bigsbyspot.org/">page comparing various programming languages</a>.
+                The thing grew on its own and, at some point and as usual, I realized I made little decisions that hurt me
+                along the way because "it was just for this".
+            </p>
+
+            <h1>Overview</h1>
+            <p>This is an exploration on various options for the websites I usually do. These need to:</p>
+            <ul>
+                <li>Be SPAs (Single Page Applications), i.e., require routing managent;</li>
+                <li>Have code snippets highlight;</li>
+                <li>Grow from a simple boiler placte I can reuse dynamically.</li>
+            </ul>
+            <p>There are, then, three areas of choice:</p>
+            <ol>
+                <li><span class="underlined">Module management</span> - loading component (modules) dinamically</li>
+                <li><span class="underlined">Application and Routing</span> - managing application logic and SPA routing</li>
+                <li><span class="underlined">Code Snippet highlighting</span> - self explainatory</li>
+            </ol>
+
+            <h1>Options</h1>
+            <p>Although there are, there alwasy are, many other options that I might test in the future, these are the components
+                tested.
+            </p>
+            <h3>Module Management</h3>
+            <ul>
+                <li><a target="_blank" href="http://requirejs.org/">RequireJS</a></li>
+                <li><a target="_blank" href="https://github.com/systemjs/systemjs">SystemJS</a></li>
+            </ul>
+            <h3>Appliction and Routing</h3>
+            <ul>
+                <li><a target="_blank" href="https://angularjs.org/">AngularJS</a> with <a target="_blank" href="https://github.com/angular-ui/ui-router">AngularUI Router</a></li>
+            </ul>
+            <p>I'm trying <a target="_blank" href="https://vuejs.org/">Vue.js</a> and it here, one of these days.</p>
+            <h3>Code Snippet highlighting</h3>
+            <ul>
+                <li><a target="_blank" href="https://codemirror.net/">CodeMirror</a></li>
+                <li><a target="_blank" href="https://highlightjs.org/">highlight.js</a></li>
+                <li><a target="_blank" href="http://prismjs.com/">Prims</a></li>
+            </ul>
+
+            <h1>Code and Structure</h1>
+            <p>The code is all in this <a target="_blank" href="https://github.com/Bigsby/WebSiteBoilertplate">GitHub Repository</a>.</p>
+            <p>There are shared components that don't need to change regardless of the options, these are:</p>
+            <ul>
+                <li>Styles - <code>.css</code> file(s) in <code>styles</code> folder.</li>
+                <li>Data - <code>.json</code> file(s) in <code>data</code> folder.</li>
+                <li>Angular Templates - <code>.html</code> file(s) in <code>tamplates</code> folder.</li>
+            </ul>
+            <p>The non-shared code consists of separate start <code>.html</code> page for each option, in root, and, in the
+                <code>scripts</code> folder there is a folder for both <span class="bold">RequireJs</span> (<code>requirejs</code>)
+                and <span class="bold">SystemJS</span> (
+                <coode>systemjs</coode>). In each there is a <code>core</code> folder containing shared code for bootraping the
+                required modules (<code>bootstrap.js</code> and <code>config.json</code>). And the, a folder for each of
+                the options that contains a folder <code>app</code> with the application logic and module reference for each
+                options (<code>appBuilder.js</code> and <code>config.json</code>).</p>
+
+            <p>For each options (<code>.html</code> of origin), <code>core/bootstrap.js</code> reads <code>core/config.json</code>                and the option specific <code>app/config.json</code> to configure, reference, etc. the needed modules. Then
+                calls the options specific <code>app/appBuilder.js</code> for the (AngularJS) applicaiton specific components
+                and logic.</p>
+
+            <h1 id="demos">Live Demos</h1>
+            <p>Each of the links below points to a live implementation of the options</p>
+            <ul class="loaders">
+                <li>
+                    <h2>RequireJS</h2>
+                    <ul>
+                        <li>
+                            <h2>+<a href="rjs-ajs.html">AngularJS</a></h2>
+                        </li>
+                        <ul>
+                            <li>
+                                <h2>+<a href="rjs-ajs-uir.html">AngularUI Router</a></h2>
+                                <ul>
+                                    <li>
+                                        <h2>+<a href="rjs-ajs-uir-cm.html">CodeMirror</a></h2>
+                                    </li>
+                                    <li>
+                                        <h2>+<a href="rjs-ajs-uir-hl.html">highlight.js</a></h2>
+                                    </li>
+                                    <li>
+                                        <h2>+ <a href="rjs-ajs-uir-pr.html">Prism</a></h2>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <h2>SystemJS</h2>
+                    <ul>
+                        <li>
+                            <h2>+<a href="sjs-ajs.html">AngularJS</a></h2>
+                        </li>
+                        <ul>
+                            <li>
+                                <h2>+<a href="sjs-ajs-uir.html">AngularUI Router</a></h2>
+                                <ul>
+                                    <li>
+                                        <h2>+<a href="sjs-ajs-uir-cm.html">CodeMirror</a></h2>
+                                    </li>
+                                    <li>
+                                        <h2>+<a href="sjs-ajs-uir-hl.html">highlight.js</a></h2>
+                                    </li>
+                                    <li>
+                                        <h2>+<a href="sjs-ajs-uir-pr.html">Prism</a></h2>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+
+            <h1>My choice</h1>
+            <p>For now, I'll be going with:</p>
+            <ul class="noBulletList">
+                <li>
+                    <h3>SystemJS</h3>
+                    <p>Although there are a lot of (little) things I like most in <span class="bold">RequireJS</span> it is clearly, the way of the near future, going along where web (and not only) standards are going but, still, making very good job at maintaining compatibility with other stuff, like <span class="bold">RequireJS</span>.
+                </li>
+                <li>
+                    <h3>highlight.js</h3>
+                    <p>It does miss some features, like line numbers, but it is, by far, the lightest and the one requiring less scafolding.</p>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <footer>
+        <span class="copy">&copy; 2017 Bigsby</span>
+        <a class="link" target="_blank" href="http://bigsbyspot.org">about the author</a>
+    </footer>
+</body>
+
+</html>

@@ -29,21 +29,23 @@ There are implementations of:
     <th>Module Loader</th><th colspan="6">Modules</th>
 </tr>
 <tr>
-    <td rowspan="3">RequireJS</td><td rowspan="3">+</td><td rowspan="3"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs">AngularJS</a></td><td rowspan="3">+</td><td rowspan="3"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs%2Buirouter">AngularUI Router</a></td><td rowspan="3">+</td><td><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs%2Buirouter%2Bcodemirror">CodeMirror</a></td>
+    <td rowspan="3">RequireJS</td><td rowspan="3">+</td><td rowspan="3">AngularJS</td><td rowspan="3">+</td><td rowspan="3">AngularUI Router</td><td rowspan="3">+</td><td>CodeMirror</td>
 </tr>
 <tr>
-    <td><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs%2Buirouter%2Bprismjs">Prism</a></td>
+    <td>Prism</td>
 </tr>
 <tr>
-    <td><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs%2Buirouter%2Bhighlightjs">highlight.js</a></td>
+    <td>highlight.js</td>
 </tr>
 <tr>
-    <td rowspan="3">SystemJS</td><td rowspan="3">+</td><td rowspan="3"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/systemjs/angularjs">AngularJS</a></td><td rowspan="3">+</td><td rowspan="3"><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/systemjs/angularjs%2Buirouter">AngularUI Router</a></td><td rowspan="3">+</td><td><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/systemjs/angularjs%2Buirouter%2Bcodemirror">CodeMirror</a></td>
+    <td rowspan="3">SystemJS</td><td rowspan="3">+</td><td rowspan="3">AngularJS</td><td rowspan="3">+</td><td rowspan="3">AngularUI Router</td><td rowspan="3">+</td><td>CodeMirror</td>
 </tr>
 <tr>
-    <td><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/systemjs/angularjs%2Buirouter%2Bprismjs">Prism</a></td>
+    <td>Prism</td>
 </tr>
 <tr>
-    <td><a href="https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/requirejs/angularjs%2Buirouter%2Bhighlightjs">highlight.js</a></td>
+    <td>highlight.js</td>
 </tr>
 </table>
+
+It's all [here](http://boilerplate.bigsbyspot.org).

@@ -1,0 +1,105 @@
+{
+    "codeMirrorTheme": "neo",
+    "languages": [
+        {
+            "name": "Bash",
+            "codemirror": "bash",
+            "hljs": "bash",
+            "prism": "bash",
+            "hideLineNumbers": true,
+            "code": "> for a in: node filename.js"
+        },
+        {
+            "name": "Output",
+            "codemirror": "text",
+            "hljs": "nohighlight",
+            "prism": "text",
+            "hideLineNumbers": true,
+            "code": "This is the sentence.\nThis is the sentence.\nThis is another sentence."
+        },
+        {
+            "name": "JavaScript",
+            "codemirror": "text/javascript",
+            "hljs": "javascript",
+            "prism": "javascript",
+            "code": "console.log(\"Hello, World!\");"
+        },
+        {
+            "name": "C++",
+            "codemirror": "text/x-c++src",
+            "hljs": "cpp",
+            "prism": "cpp",
+            "code": "#include <iostream>\n\nint main()\n{\n std::cout << \"Hello, World!\";\n   return 0;\n}"
+        },
+        {
+            "name": "Python",
+            "codemirror": "text/x-python",
+            "hljs": "python",
+            "prism": "python",
+            "code": "print(\"Hello, World!\")"
+        },
+        {
+            "name": "F#",
+            "codemirror": "text/x-fsharp",
+            "hljs": "fsharp",
+            "prism": "fsharp",
+            "code": "printfn \"Hello, World!\""
+        },
+        {
+            "name": "Go",
+            "codemirror": "text/x-go",
+            "hljs": "go",
+            "prism": "go",
+            "code": "package main\n\nimport\"fmt\"\n\nfunc main() {\n\tfmt.Println(\"Hello, World!\")\n}"
+        },
+        {
+            "name": "Ruby",
+            "codemirror": "text/x-ruby",
+            "hljs": "ruby",
+            "prism": "ruby",
+            "code": "puts 'Hello, Comments!'\n\n# This is a comment\n\n=begin\nThis is a \nmultiline comment\n=end"
+        },
+        {
+            "name": "C#",
+            "codemirror": "text/x-csharp",
+            "hljs": "csharp",
+            "prism": "csharp",
+            "code": "class Program\n{\n\tpublic static void Main()\n\t{\n\t\tSystem.Console.Write(\"Hello, World!\");\n\t}\n}"
+        },
+        {
+            "name": "Java",
+            "codemirror": "text/x-java",
+            "hljs": "java",
+            "prism": "java",
+            "code": "public class hello {\n\n\tpublic static void main(String[] args)\t{\n\t\tSystem.out.println(\"Hello, World!\");\n\t}\n\n}"
+        },
+        {
+            "name": "Perl",
+            "codemirror": "text/x-perl",
+            "hljs": "perl",
+            "prism": "perl",
+            "code": "print \"Hello, World!\";"
+        },
+        {
+            "name": "Powershell",
+            "codemirror": "application/x-powershell",
+            "hljs": "powershell",
+            "prism": "powershell",
+            "code": "Write-Host \"Hello, World!\""
+        },
+        {
+            "name": "PHP",
+            "codemirror": "text/x-php",
+            "hljs": "php",
+            "prism": "php",
+            "code": "<?php echo \"Hello, World!\"; ?>"
+        },
+        {
+            "name": "VB.Net",
+            "codemirror": "text/x-vb",
+            "hljs": "vbnet",
+            "prism": "basic",
+            "code": "Public Module Program\n\tSub Main()\n\t\tSystem.Console.WriteLine (\"Hello, World!\")\n\tEnd Sub\nEnd Module"
+        }
+    ]
+}

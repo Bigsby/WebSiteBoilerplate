@@ -1,0 +1,113 @@
+{
+    "config": {
+        "paths": {
+            "angular-ui-router": "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min",
+            "prism": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-core.min",
+            "prism-bash": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-bash.min",
+            "prism-linenumber": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/line-numbers/prism-line-numbers.min",
+            "prism-clike": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-clike.min",
+            "prism-javascript": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-javascript.min",
+            "prism-c": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-c.min",
+            "prism-cpp": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-cpp.min",
+            "prism-python": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-python.min",
+            "prism-fsharp": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-fsharp.min",
+            "prism-go": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-go.min",
+            "prism-ruby": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-ruby.min",
+            "prism-csharp": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-csharp.min",
+            "prism-java": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-java.min",
+            "prism-perl": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-perl.min",
+            "prism-powershell": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-powershell.min",
+            "prism-php": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-php.min",
+            "prism-basic": "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-basic.min"
+        },
+        "shim": {
+            "prism": {
+                "exports": "Prism"
+            },
+            "prism-bash": [
+                "prism"
+            ],
+            "prism-linenumber": [
+                "prism"
+            ],
+            "prism-clike": [
+                "prism"
+            ],
+            "prism-javascript": [
+                "prism-clike"
+            ],
+            "prism-c": [
+                "prism-clike"
+            ],
+            "prism-cpp": [
+                "prism-c"
+            ],
+            "prism-python": [
+                "prism"
+            ],
+            "prism-fsharp": [
+                "prism-clike"
+            ],
+            "prism-go": [
+                "prism-clike"
+            ],
+            "prism-ruby": [
+                "prism-clike"
+            ],
+            "prism-csharp": [
+                "prism-clike"
+            ],
+            "prism-java": [
+                "prism-clike"
+            ],
+            "prism-perl": [
+                "prism"
+            ],
+            "prism-powershell": [
+                "prism"
+            ],
+            "prism-php": [
+                "prism-clike"
+            ],
+            "prism-basic":[
+                "prism"
+            ],
+            "appBuilder": [
+                "prism-bash",
+                "prism-linenumber",
+                "prism-javascript",
+                "prism-cpp",
+                "prism-python",
+                "prism-fsharp",
+                "prism-go",
+                "prism-ruby",
+                "prism-csharp",
+                "prism-java",
+                "prism-perl",
+                "prism-powershell",
+                "prism-php",
+                "prism-basic"
+            ]
+        }
+    },
+    "requires": [
+        "angular-ui-router"
+    ],
+    "angular": {
+        "modules": [
+            "ui.router"
+        ],
+        "configComponents": [
+            "$stateProvider",
+            "$urlRouterProvider"
+        ]
+    },
+    "styles": [
+        "styles/appStyles",
+        "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min",
+        "https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/line-numbers/prism-line-numbers.min"
+    ],
+    "initialData": [
+        "codes"
+    ]
+}

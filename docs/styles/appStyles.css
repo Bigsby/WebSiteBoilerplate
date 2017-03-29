@@ -1,0 +1,12 @@
+p {
+    text-decoration: underline;
+}
+
+.CodeMirror {
+    height: auto;
+    border: 1px solid black;
+}
+
+.CodeMirror-scroll{
+    height: auto;
+}
