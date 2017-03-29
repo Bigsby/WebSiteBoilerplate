@@ -1,4 +1,4 @@
-# Website Boilertplate
+# Website Boilerplate
 Multiple "templates" to use as base for SPA (Single Page Application) websites using:
 
 * [RequireJS](http://requirejs.org/) or
@@ -19,11 +19,9 @@ Multiple "templates" to use as base for SPA (Single Page Application) websites u
 
 Also allows for a single configuration for [Google Analytics](https://analytics.google.com/) on the websites with AngularUI Router.
 
+It's all [here](http://boilerplate.bigsbyspot.org).
 
-As such, besides a:
-* [Plain site](https://github.com/Bigsby/WebSiteBoilertplate/tree/master/src/plain)
-
-There are implementations of:
+Included implementations:
 <table>
 <tr>
     <th>Module Loader</th><th colspan="6">Modules</th>
@@ -48,4 +46,3 @@ There are implementations of:
 </tr>
 </table>
 
-It's all [here](http://boilerplate.bigsbyspot.org).
