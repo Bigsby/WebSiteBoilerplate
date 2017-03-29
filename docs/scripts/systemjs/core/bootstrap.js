@@ -1,7 +1,7 @@
 "use strict";
 (function () {
     function GetPath() {
-        var processReg = /:\/\/\w+(?::\d+)?\/[^-]+-(.*).html/;
+        var processReg = /:\/\/[^\/]+\/[^-]+-(.*).html/;
         var path = processReg.exec(window.location.href)[1];
         var pathReplaces = {
             "ajs": "angularjs",
